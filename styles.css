@@ -1,0 +1,139 @@
+html,
+body{
+    width: 100%;
+
+}
+body{
+    height: auto;
+    margin: 0;
+    background-image: url(Imagenes/back\ 4.jpg);
+    overflow-y: hidden;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-ppal{
+    color: white;
+    font-family: 'Rampart One', cursive;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.contenedor-del-juego{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.columna-izquierda{
+    display: flex;
+    flex-direction: row;
+}
+.columna-derecha {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.columna-de-dos-botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.columna-de-tres-botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dos-botones-superior{
+    height: 110px;
+    width: 110px;
+    background-color: orangered;
+    border-radius: 50%;
+    border-color: rgb(174, 173, 172);
+    border-style: outset;
+    border-width: 5px;
+    margin: 20px;
+    cursor: grab;
+    transition: background-color 0.5;
+}
+.dos-botones-superior:active {
+    box-shadow: 0 1px 0 #00823F;
+    bottom:-4px;
+    background-color: rgb(45, 95, 83);
+    border-width: 10px;
+}
+
+.dos-botones-inferior{
+    height: 110px;
+    width: 110px;
+    background-color: fuchsia;
+    border-radius: 50%;
+    border-color: rgb(174, 173, 172);
+    border-style: outset;
+    border-width: 5px;
+    margin: 20px;
+    cursor:grab;
+    transition: background-color 0.5;
+}
+
+.dos-botones-inferior:active {
+    box-shadow: 0 1px 0 #00823F;
+    bottom:-4px;
+    background-color: rgb(236, 206, 149);
+    border-width: 10px;
+}
+
+.tres-botones-medio{
+    height: 110px;
+    width: 110px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    border-color: rgb(174, 173, 172);
+    border-style: outset;
+    border-width: 5px;
+    margin: 20px;
+    cursor: grab;
+    transition: background-color 0.5;
+}
+.tres-botones-medio:active {
+    box-shadow: 0 1px 0 #7f4ba4;
+    bottom:-4px;
+    background-color: rgb(134, 105, 168);
+    border-width: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+
+}
+.frase-footer{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Press Start 2P', cursive;
+}
+.imagen-footer-bazzinga{
+    height: 150px;
+    width: 150px;
+}
