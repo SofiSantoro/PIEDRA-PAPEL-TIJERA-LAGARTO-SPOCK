@@ -9,6 +9,11 @@ body{
     background-image: url(Imagenes/back\ 4.jpg);
     overflow-y: hidden;
 }
+@media screen and (min-width: 768px){
+    body{
+        overflow-y: auto; 
+    }
+}
 
 header{
     display: flex;
@@ -26,6 +31,17 @@ header{
     margin-bottom: 0px;
     flex-wrap: wrap;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .titulo-ppal{
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .titulo-ppal{
+        font-size: 25px;
+    }
+}
 
 img{
     max-width: 100%;
@@ -38,20 +54,28 @@ img{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .columna-izquierda{
     display: flex;
     flex-direction: row;
 }
+
 .columna-derecha {
     display: flex;
     flex-direction: row-reverse;
 }
+
 .columna-de-dos-botones{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 50px;
+}
+@media screen and (min-width: 576px) and (max-width: 1023px){
+    .columna-de-dos-botones{
+        margin: 0px;    
+    }
 }
 
 .columna-de-tres-botones{
@@ -64,7 +88,7 @@ img{
 .dos-botones-superior{
     height: 110px;
     width: 110px;
-    background-color: orangered;
+    background-color: rgb(246, 132, 50);
     border-radius: 50%;
     border-color: rgb(174, 173, 172);
     border-style: outset;
@@ -79,11 +103,23 @@ img{
     background-color: rgb(45, 95, 83);
     border-width: 10px;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .dos-botones-superior{
+        height: 90px;
+        width: 90px;    
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .dos-botones-superior{
+        height: 60px;
+        width: 60px;     
+    }
+}
 
 .dos-botones-inferior{
     height: 110px;
     width: 110px;
-    background-color: fuchsia;
+    background-color: rgb(179, 241, 86);
     border-radius: 50%;
     border-color: rgb(174, 173, 172);
     border-style: outset;
@@ -99,11 +135,23 @@ img{
     background-color: rgb(236, 206, 149);
     border-width: 10px;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .dos-botones-inferior{
+        height: 90px;
+        width: 90px;    
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .dos-botones-inferior{
+        height: 60px;
+        width: 60px;     
+    }
+}
 
 .tres-botones-medio{
     height: 110px;
     width: 110px;
-    background-color: greenyellow;
+    background-color: rgb(178, 136, 234);
     border-radius: 50%;
     border-color: rgb(174, 173, 172);
     border-style: outset;
@@ -117,6 +165,18 @@ img{
     bottom:-4px;
     background-color: rgb(134, 105, 168);
     border-width: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .tres-botones-medio{
+        height: 90px;
+        width: 90px;    
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .tres-botones-medio{
+        height: 60px;
+        width: 60px;     
+    }
 }
 
 footer{
@@ -133,7 +193,20 @@ footer{
     font-size: 15px;
     font-family: 'Press Start 2P', cursive;
 }
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .frase-footer{
+        font-size: 8px;
+   
+    }
+}
+
 .imagen-footer-bazzinga{
     height: 150px;
     width: 150px;
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .imagen-footer-bazzinga{
+        height: 90px;
+        width: 90px;     
+    }
 }
